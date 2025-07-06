@@ -1,0 +1,101 @@
+/* Body styling */
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #076656;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Mode selector */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px black(0, 0, 0, 0.1);
+}
+
+/* Game board grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #076656, #076656);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px black(0, 0, 0, 0.1);
+}
+
+/* Game cells */
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5em;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  border: 3px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.cell:hover {
+  background-color: #dceeff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Highlight winning cells */
+.cell.win {
+  background-color: #c1f7c0;
+  color: #2e7d32;
+  box-shadow: 0 0 15px rgba(46, 125, 50, 0.6);
+}
+
+/* Status display */
+#status {
+  font-size: 18px;
+  margin: 15px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Restart button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
